@@ -1,12 +1,26 @@
-# 云开发 quickstart
+# 新交通联合
 
-这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：
+> 又又一款小程序，用于交通联合卡适用地区查询
 
-- 数据库：一个既可在小程序前端操作，也能在云函数中读写的 JSON 文档型数据库
-- 文件存储：在小程序前端直接上传/下载云端文件，在云开发控制台可视化管理
-- 云函数：在云端运行的代码，微信私有协议天然鉴权，开发者只需编写业务逻辑代码
+# 截图预览
 
-## 参考文档
+![](https://tva1.sinaimg.cn/large/007S8ZIlgy1gdrvtu0e0mj31400u0k4w.jpg)
 
-- [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
+# 介绍
+
+小程序在选择地区/同意授权地理位置查询后，将显示该地区是否支持交通联合卡、交通联合卡适用范围。数据仅供参考，请以全国交通一卡通数据交换中心最新发布信息及当地营运机构答复为准。
+
+**数据来自维基百科**： <https://zh.wikipedia.org/wiki/%E5%85%A8%E5%9B%BD%E4%BA%A4%E9%80%9A%E4%B8%80%E5%8D%A1%E9%80%9A%E4%BA%92%E8%81%94%E4%BA%92%E9%80%9A#cite_note-88>
+
+# 扫码使用
+
+![](https://tva1.sinaimg.cn/large/007S8ZIlgy1gdrw0jm42aj3076076aa3.jpg)
+
+# 支持
+
+可以来创造者日报点赞 <https://creatorsdaily.com/68dab7e5-bf27-496a-a111-a98154a34bf1>
+
+# 最后
+
+欢迎使用和反馈问题，感谢🙏
 
