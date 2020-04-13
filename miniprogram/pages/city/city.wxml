@@ -1,0 +1,33 @@
+<!--pages/city/city.wxml-->
+<!--pages/index/index.wxml-->
+<mp-navigation-bar show="{{isShow}}" animated="{{animated}}" color="{{color}}" background="{{background}}" title="城市选择" back="{{true}}">
+
+</mp-navigation-bar>
+
+<!-- <mp-cells ext-class="my-cells" title="交通联合卡适用地区">
+	<mp-cell value="{{item.name}}" footer="说明文字" wx:for='{{citys}}' wx:key></mp-cell>
+</mp-cells> -->
+
+<view wx:for='{{citys}}' wx:key>
+	<view class="cu-bar bg-white solid-bottom" bindtap="showChildren" data-index="{{index}}">
+		<view class="action">
+			<text class="cuIcon-titles text-gray "></text> {{item.name}}
+		</view>
+		<view class="content text-bold">
+    </view>
+		<view class="action">
+			<text class="cuIcon-{{item.isShow?'unfold':'right'}}"></text>
+		</view>
+	</view>
+	<view class="cu-list menu {{item.isShow?'show':'hide'}} bg-gray">
+		<view class="cu-item arrow" wx:for='{{item.sub}}' wx:for-item='sub' wx:for-index='subIndex' wx:key bindtap="getCity" data-index="{{index}}" data-subIndex='{{subIndex}}' >
+			<view class="content">
+				<text class="text-grey">{{sub.name}}</text>
+			</view>
+		</view>
+	</view>
+</view>
+
+
+
+<mp-halfScreenDialog bindbuttontap="buttontap" show="{{show}}" maskClosable="{{false}}" title="测试标题B" subTitle="测试标题B的副标题" desc="辅助描述内容，可根据实际需要安排" tips="辅助提示内容，可根据实际需要安排" buttons="{{buttons}}"></mp-halfScreenDialog>

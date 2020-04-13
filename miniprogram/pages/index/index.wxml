@@ -1,0 +1,64 @@
+<!--pages/index/index.wxml-->
+<mp-navigation-bar show="{{isShow}}" animated="{{animated}}" color="{{color}}" background="{{background}}" title="{{navTitle}}" back="{{false}}">
+	<view slot='left'>
+		<button open-type="share" style="width:30px" hover-class="none" class="text-center">
+			<mp-icon icon="share" color="black" size="{{25}}"></mp-icon>
+		</button>
+	</view>
+</mp-navigation-bar>
+<view class="bg-white">
+	<view class="margin-top padding text-center">
+		<image src="../../images/logo_180.png" mode="widthFix" style="width:120px;"></image>
+	</view>
+	<navigator url="/pages/city/city" hover-class="none" class="padding text-center">
+		<text class="text-black text-bold text-lg">交通联合卡适用地区查询 - </text>
+		<text class="text-blue"> {{title?title:location.ad_info.city}} </text>
+		<text class="cuIcon-unfold text-blue"></text>
+	</navigator>
+	<view class="cu-bar bg-white">
+		<view class="action">
+			<text class="text-black text-bold">查询结果：</text>
+		</view>
+	</view>
+	<view class="padding-left padding-right margin-bottom">
+		<view class="padding bg-gray radius-sm text-grey">
+			<view> <text class="text-black">适用范围：</text>{{city.mark?city.mark:'可用于全市公交'}}</view>
+			<view wx:if='{{city.cardName}}' class="margin-top"> <text class="text-black">交通卡：</text>{{city.cardName}}</view>
+		</view>
+	</view>
+	<view class="cu-bar bg-white">
+		<view class="action">
+			<text>提示：</text>
+		</view>
+	</view>
+	<view class="padding-left padding-right margin-bottom">
+		<view class="padding bg-gray radius-sm text-grey">
+			选择地区后，将显示该地区是否支持交通联合卡、交通联合卡适用范围。数据仅供参考，请以全国交通一卡通数据交换中心最新发布信息及当地营运机构答复为准。
+		</view>
+	</view>
+
+	<view class="cu-bar bg-white">
+		<view class="action">
+			<text>说明：</text>
+		</view>
+	</view>
+	<view class="padding-left padding-right margin-bottom">
+		<view class="padding bg-gray radius-sm text-grey" bindtap="copyUrl">
+			数据来自维基百科
+			<view class="text-cut text-blue text-sm">https://zh.wikipedia.org/wiki/%E5%85%A8%E5%9B%BD%E4%BA%A4%E9%80%9A%E4%B8%80%E5%8D%A1%E9%80%9A%E4%BA%92%E8%81%94%E4%BA%92%E9%80%9A#cite_note-88</view>
+		</view>
+	</view>
+
+	<view class="flex padding justify-center margin-bottom">
+		<view><button open-type="contact" class="text-grey">在线支持</button></view>
+		<view><button open-type="feedback" class="text-blue">意见反馈</button></view>
+	</view>
+
+	<view class="padding">
+		<ad unit-id="adunit-08ab316f0a0fd291"></ad>
+	</view>
+</view>
+
+
+
+<view class="padding text-center text-gray">By extrastu</view>

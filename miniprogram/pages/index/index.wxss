@@ -1,0 +1,7 @@
+/* pages/index/index.wxss */
+  .chooseCity{
+    padding: 10rpx;
+    background-color: #fff;
+    text-align: center;
+    color: #222;
+  }
